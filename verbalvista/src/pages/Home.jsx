@@ -4,10 +4,8 @@ import Hero from "../features/Hero/Hero";
 const Home = function () {
   return (
     <main>
-      <div className="topSection">
-        <Header />
-        <Hero />
-      </div>
+      <Header />
+      <Hero />
     </main>
   );
 };

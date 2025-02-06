@@ -1,3 +1,71 @@
+.sectionHero {
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+  background-color: var(--bg--main);
+}
+
 .hero {
   color: white;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.headingPrimary {
+  font-size: 6.2rem;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.headingDescription {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.headingPrimary span {
+  position: relative;
+}
+
+.headingPrimary span::before,
+.headingPrimary span::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 7px;
+  transform: translateX(-50%);
+  background: url("../../assets/scribble.svg") no-repeat center;
+  background-size: contain;
+}
+
+.headingPrimary span::before {
+  left: 60%;
+  bottom: -10px;
+}
+
+.headingPrimary span::after {
+  left: 40%;
+  bottom: -2px;
+}
+
+.btn {
+  border: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.8rem;
+  background-color: var(--clr--orange-primary);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.heroImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
