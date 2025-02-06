@@ -1,0 +1,251 @@
+.addressFormBox {
+  background-color: #f4f4f4;
+  padding-bottom: 4.6rem;
+  min-height: 100vh;
+}
+
+/* Details */
+.summaryBody {
+  display: flex;
+  gap: 1.2rem;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+
+.leftSide {
+  background-color: #fff;
+  font-size: 1.4rem;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  flex: 1;
+  height: min-content;
+}
+
+.leftSide .itemDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.leftSide .itemDetail li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.leftSide .itemDetail li:first-child {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.leftSide .itemDetail .product,
+.leftSide .itemDetail .summaryCard {
+  flex: 1;
+}
+
+.leftSide .itemDetail .price,
+.leftSide .itemDetail .quantity {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.leftSide .itemDetail li:nth-child(2) .quantity {
+  margin-right: 1.9rem;
+}
+
+.cartTotalBox h3 {
+  font-size: 2rem;
+  font-weight: 450;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cartTotalBox .total {
+  margin-top: 1.6rem;
+}
+
+.cartTotalBox .total li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  color: #6e6e6e;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+/* Right Side */
+.rightSide {
+  flex: 1;
+}
+
+.grandTotal,
+.addAddressBox,
+.formContainer {
+  padding: 2.2rem 1.8rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  height: auto;
+}
+
+.grandTotal,
+.addAddressBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.grandTotal {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.grandTotal ion-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.grandTotal p:nth-child(2) {
+  flex: 1;
+  margin-left: 1.4rem;
+}
+
+.addAddressBox {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.addAddressBox .delivery,
+.addAddressBox .addressLink {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.addAddressBox .addressLink {
+  cursor: pointer;
+  text-decoration: none;
+  color: #019e43;
+}
+
+/* form container */
+.formContainer {
+  overflow-y: hidden;
+  display: none;
+  transform: translateY(-100%);
+}
+
+.formContainer.active {
+  display: block;
+  transform: translateY(0%);
+  transition: transform 0.3s;
+}
+
+.formContainer.active ~ .addAddressBox {
+  display: none;
+}
+
+.formContainer h3 {
+  font-size: 1.4rem;
+  font-weight: 450;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+
+.formContainer fieldset {
+  border: none;
+}
+
+.formContainer .field .fieldsetDivider {
+  margin: 1.6rem 1.6rem 2.4rem 1.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.formContainer .personalDetails {
+  background: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.formContainer .field .fieldsetDivider:after {
+  content: "";
+  position: absolute;
+  width: auto;
+  left: -3.5rem;
+  right: -3.5rem;
+  border-bottom: 1px solid #ccc;
+  bottom: 5.8px;
+  z-index: -1;
+}
+
+.formContainer .field .inputRow {
+  display: grid;
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.formContainer .field .inputRow.grid2Cols {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.starIcon {
+  color: red;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+}
+
+.addressChild {
+  margin-bottom: 2.4rem;
+}
+
+.radioBox {
+  display: flex;
+  gap: 3.6rem;
+  font-size: 1rem;
+  font-weight: 450;
+  text-transform: uppercase;
+}
+
+.radioBox div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.radioBox div label {
+  display: block;
+}
+
+.formContainer button {
+  padding: 1.2rem 2.4rem;
+  margin-top: 3.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+}

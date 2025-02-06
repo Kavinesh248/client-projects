@@ -1,0 +1,84 @@
+.productContainer {
+  margin: 5.2rem auto;
+  text-align: center;
+  max-width: 1400px;
+}
+
+.productContainer h1 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2.8rem;
+  overflow: auto;
+  margin: 0 auto;
+  max-width: 1380px;
+}
+
+.wishlistCard {
+  width: 100%;
+  outline: 1px solid #e9e9eb;
+}
+
+.wishlistCard img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.wishlistInfo {
+  height: 12%;
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.wishlistInfo div:first-child {
+  padding: 0.6rem 1.2rem;
+  padding-bottom: 0.6rem;
+}
+
+.wishlistInfo div:first-child p {
+  font-size: 1.377rem;
+  color: #282c3f;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+  padding-bottom: 0.8rem;
+  margin: 0 auto 0.2rem auto;
+}
+
+.moveToBagBox {
+  height: 7%;
+  font-size: 1.334rem;
+  font-weight: 700;
+  color: #343a40;
+  text-transform: uppercase;
+
+  border-top: 1px solid #e9e9eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+}
+
+.moveToBagBox div {
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.moveToBagBox svg {
+  cursor: pointer;
+}

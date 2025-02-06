@@ -1,0 +1,389 @@
+/* Utility classes */
+:global(.grid) {
+  display: grid;
+  justify-content: center;
+}
+
+:global(.flex) {
+  display: flex;
+  align-items: center;
+}
+
+/* Header styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 1.2rem 1.8rem;
+}
+
+.logoName {
+  font-size: 4rem;
+  font-weight: 550;
+  letter-spacing: 0.3rem;
+  width: min-content;
+  text-decoration: none;
+}
+
+.inputs {
+  gap: 2.4rem;
+  grid-template-columns: 5fr 1fr;
+}
+
+.inputContainer,
+.inputContainerRes {
+  display: grid;
+  grid-template-columns: 5fr auto;
+  border: solid 1px #ccc;
+  align-items: center;
+}
+
+.inputContainer {
+  padding: 0 0.8rem;
+}
+
+.inputContainerRes {
+  padding: 0 0.8rem;
+  border-bottom: 2px solid #000;
+}
+
+.inputBox,
+.inputBoxRes {
+  border: none;
+  outline: none;
+  padding: 0 0.8rem;
+  font-size: 1.4rem;
+}
+
+.inputBox {
+  height: 4rem;
+}
+
+.inputBoxRes {
+  height: 3.6rem;
+  width: 100%;
+}
+
+.inputContainer span {
+  width: 5rem;
+  display: grid;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.searchIcon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.actions {
+  font-size: 2.4rem;
+  color: #525252;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.actions span {
+  transition: all 0.2s;
+}
+
+.actions span:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.userIcon {
+  position: relative;
+  cursor: pointer;
+}
+
+.icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #525252;
+}
+
+.userIconDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 12rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.4rem;
+  background: #000;
+  position: absolute;
+  top: 5rem;
+  left: -4.2rem;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.userIconDetails.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.userIconDetails::after {
+  content: "";
+  position: absolute;
+  top: -0.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid black;
+}
+
+.userIconDetails a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;
+}
+
+.icon:hover {
+  color: #000;
+}
+
+.activeLink .icon {
+  stroke: #000;
+}
+
+.menuList,
+.menuListRes {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  gap: 4.8rem;
+  justify-content: center;
+  padding: 1rem 4.8rem;
+  text-transform: uppercase;
+  border-top: 1px solid #ccc;
+}
+
+.menuItem {
+  display: flex;
+  gap: 0.6rem;
+  cursor: pointer;
+  padding-bottom: 0.2rem;
+  position: relative;
+}
+
+.menuItem span {
+  display: flex;
+  align-items: center;
+}
+
+.menuItem span ion-icon {
+  color: #ff922b;
+  transition: all 0.3s;
+}
+
+.menuItem:hover span ion-icon {
+  color: #000;
+}
+
+.menuItem:after {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  margin-top: 0.2rem;
+  background: #000;
+  transition: width 0.2s;
+}
+
+.menuItem:hover:after {
+  width: 100%;
+}
+
+.resMenu {
+  align-items: center;
+  gap: 2rem;
+  display: none;
+}
+
+.resIcon {
+  display: none;
+  color: #525252;
+}
+
+.resMenu span {
+  display: none;
+  gap: 0.8rem;
+  outline: 1px solid #525252;
+  /* transform: translateX(-200%); */
+}
+
+.resMenu span button {
+  font-size: 2.4rem;
+  height: min-content;
+  border: none;
+  background: none;
+  padding-inline: 0.6rem;
+  cursor: pointer;
+}
+
+.resMenu span input {
+  border: none;
+  padding-left: 1.6rem;
+}
+
+.btnClose {
+  position: absolute;
+  top: 0;
+  right: 0.8rem;
+  font-size: 4.8rem;
+  color: #525252;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+}
+
+/* Responsive styles */
+@media (max-width: 1046px) {
+  .logoName {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .navContainer {
+    grid-template-columns: 2fr 1.2fr;
+  }
+}
+
+@media (max-width: 840px) {
+  .navContainer {
+    padding: 1.8rem;
+    grid-template-columns: auto 4fr auto;
+  }
+
+  .inputContainer {
+    display: none;
+  }
+
+  .resIcon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .inputs {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+
+  .resMenu {
+    display: flex;
+  }
+
+  .resMenu.searchOpen span {
+    display: flex;
+  }
+
+  .resMenu.searchOpen .lucideSearchIcon {
+    display: none;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .iconRes {
+    width: 2.5rem;
+    height: 2.5rem;
+    filter: brightness(0);
+    display: none;
+  }
+
+  .menuListRes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 35rem;
+    z-index: 999;
+    padding: 0;
+    gap: 0;
+    align-items: start;
+    flex-direction: column;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .menuListRes .menuItem span {
+    margin-left: auto;
+  }
+
+  .menuListRes .menuItem:first-child {
+    margin: 0 auto 4.8rem auto;
+  }
+
+  .menuListRes .menuItem:not(:first-child) {
+    border-bottom: 1px solid #efecf0;
+    padding: 2.4rem 2.7rem;
+    width: 100%;
+    font-weight: 550;
+  }
+
+  .menuListRes.open {
+    transform: translateX(0%);
+  }
+
+  .overlay.open {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .logoName {
+    font-size: 3rem;
+  }
+
+  .lucideSearchIcon {
+    display: none;
+  }
+
+  .menuListRes {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 416px) {
+  .navContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logoName {
+    display: none;
+  }
+
+  .actions {
+    gap: 1.2rem;
+    justify-self: end;
+  }
+
+  .iconRes {
+    display: block;
+  }
+}

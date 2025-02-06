@@ -1,0 +1,198 @@
+.myWishList,
+.itemsCount {
+  font-size: 1.6rem;
+}
+
+.myWishList {
+  padding: 8.6rem 0 0 8.6rem;
+  font-weight: 650;
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 3.2rem 8.6rem 8.6rem 8.6rem;
+  gap: 2.4rem;
+}
+
+.wishlistCard {
+  height: 48rem;
+  width: 100%;
+  outline: 1px solid #e9e9eb;
+
+  position: relative;
+}
+
+.wishlistCard img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.wishlistInfo {
+  height: 12%;
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.wishlistInfo div:first-child {
+  padding: 0.6rem 1.2rem;
+  padding-bottom: 0.6rem;
+}
+
+.wishlistInfo div:first-child p {
+  font-size: 1.377rem;
+  color: #282c3f;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+  padding-bottom: 0.8rem;
+  margin: 0 auto 0.2rem auto;
+}
+
+.moveToBagBox {
+  height: 7%;
+  font-size: 1.334rem;
+  font-weight: 700;
+  color: #343a40;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  border-top: 1px solid #e9e9eb;
+}
+
+.moveToBagBox div {
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btnDelete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 24px;
+  width: 24px;
+  background-color: #ffffff99;
+  border: 1.2px solid #d4d5d9;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SelectOptions */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  transition: all 0.5s;
+  display: none;
+}
+
+.selectOptions {
+  margin: 0 auto;
+  width: 40rem;
+  height: 30rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.4rem;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  display: none;
+}
+
+.optionsProductCard {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding-bottom: 2.8rem;
+  border-bottom: 1px solid #dedede;
+}
+
+.optionsProductCard img {
+  max-width: 6rem;
+}
+
+.optionsProductCard div {
+  font-size: 1.5rem;
+  font-size: 500;
+}
+
+.optionsProductCard div p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+
+.sizeBox {
+  padding-top: 1.4rem;
+  padding-bottom: 2.2rem;
+}
+
+.sizeBox p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.sizeBox div {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 550;
+}
+
+.size {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  padding: 1rem;
+  outline: 1px solid #dedede;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.size:hover {
+  outline: 1px solid #000;
+}
+
+.btnDone {
+  width: 100%;
+  border: none;
+  padding: 1.4rem 2.6rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.active {
+  outline: 1px solid #030303;
+}
