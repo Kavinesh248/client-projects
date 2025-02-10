@@ -5,7 +5,7 @@
 }
 
 .hero {
-  color: white;
+  color: var(--clr--white-primary);
   max-width: 140rem;
   margin: 0 auto;
   padding: 0 3.2rem;
@@ -59,13 +59,44 @@
   border-radius: 0.8rem;
   background-color: var(--clr--orange-primary);
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
+  cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.btn.btnWhite {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--clr--white-primary);
+  margin-left: 1.1rem;
 }
 
 .heroImageBox {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.deliverdReview {
+  display: flex;
+  align-items: center;
+  margin-top: 8.2rem;
+}
+
+.reviewImgs img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+
+.reviewImgs img:first-child {
+  margin-left: 0;
+}
+
+.reviewText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 1.4rem;
+  line-height: 1.2;
 }
