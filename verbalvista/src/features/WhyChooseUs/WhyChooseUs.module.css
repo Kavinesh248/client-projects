@@ -1,0 +1,49 @@
+.sectionWhyChooseUs {
+  padding: 6.8rem;
+  background-color: #fcfdfd;
+}
+
+.mainText {
+  font-size: 4.2rem;
+  color: #1a1a1a;
+  margin-bottom: 3.6rem;
+}
+
+.whyCardsBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  padding-inline: 3.6rem;
+}
+
+.whyCard {
+  border-radius: 1.2rem;
+  border: 1px solid #cccccc;
+  padding: 2.4rem;
+}
+
+.iconWrapper {
+  padding: 2rem;
+  background-color: var(--clr--orange-primary);
+  width: min-content;
+  border-radius: 1.1rem;
+  margin-bottom: 2.8rem;
+}
+
+.icon {
+  width: 3rem;
+  stroke: var(--clr--white-primary);
+}
+
+.cardHeading {
+  font-size: 1.8rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 1.4rem;
+}
+
+.cardDescription {
+  font-size: 1.368rem;
+  line-height: 1.6;
+  color: #666666;
+}
