@@ -30,7 +30,7 @@ const Hero = function () {
               <img src={assets.client6} alt="client image" />
             </div>
             <p className={styles.reviewText}>
-              Join our community to <br /> extend your knowledge!
+              Join our community to extend your <br /> knowledge!
             </p>
           </aside>
         </div>
