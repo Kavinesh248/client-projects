@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import { assets } from "../../assets/assets";
+// import { assets } from "../../assets/assets";
 
 const About = function () {
   return (
