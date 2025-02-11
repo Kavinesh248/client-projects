@@ -22,10 +22,13 @@ ul {
   --cta-clr: #070052;
   --secondary-clr: #ffb800;
   --bg--main: #4f5de4;
+  --bg--secondary: #fcfdfd;
   --bg--sm: #f8f9fa;
   --clr--white-primary: #fff;
   --clr--black-primary: #000;
   --clr--orange-primary: #f57005;
+  --clr--border-grey: #cccccc;
+  --clr--description-grey: #666666;
 }
 
 html {
