@@ -1,0 +1,109 @@
+.sectionCourses {
+  padding-block: 6.8rem;
+}
+
+.cardContainer {
+  width: 100%;
+  max-width: 35rem;
+  /* margin: 2em auto; */
+  /* border-radius: 15px; */
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--clr--border-grey);
+  background-color: var(--clr--white-primary);
+}
+
+.heroImage {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+
+.courseContentWrapper,
+.courseRatingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courseContentWrapper {
+  margin-bottom: 2.4rem;
+}
+
+.mainContent {
+  padding: 1.2rem;
+}
+
+.courseRatingWrapper {
+  font-size: 1.3rem;
+  font-weight: 500;
+  gap: 0.6rem;
+}
+
+.ratingStar svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: 0.1rem;
+  fill: var(--clr--orange-primary);
+}
+
+.courseName {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  background-color: #fef1e6;
+  color: var(--clr--orange-primary);
+  text-transform: uppercase;
+}
+
+.courseTitle {
+  font-size: 2rem;
+}
+
+/* 
+.cardAttribute {
+  padding-bottom: 1.5em;
+  border-top: 2px solid var(--var-line-dark);
+}
+
+a.heroImageContainer {
+  position: relative;
+  display: block;
+}
+
+.mainContent {
+  padding: 2rem;
+}
+
+img.eye {
+  position: absolute;
+  width: 100%;
+  max-width: 2em;
+  top: 44%;
+  left: 43%;
+}
+
+.smallImage {
+  width: 1.2em;
+  margin-right: 0.5em;
+}
+
+.smallAvatar {
+  width: 2em;
+  border-radius: 200px;
+  outline: 2px solid white;
+  margin-right: 1.4em;
+}
+
+div.attribution {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 1.5em 0 4em 0;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+} */
