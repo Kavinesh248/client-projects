@@ -5,13 +5,14 @@ import brandLogo from "./logo.png";
 import heartImage from "./heart.png";
 import circleImage from "./circle.png";
 import book from "./bookBg.png";
-import aboutUsImg from "./aboutUsImage.webp";
+import aboutUsImg from "./aboutUsImageCropped.jpg";
 import client1 from "./customer-1.jpg";
 import client2 from "./customer-2.jpg";
 import client3 from "./customer-3.jpg";
 import client4 from "./customer-4.jpg";
 import client5 from "./customer-5.jpg";
 import client6 from "./customer-6.jpg";
+import course1 from "./course-01.png";
 
 export const assets = {
   hamburger,
@@ -28,4 +29,5 @@ export const assets = {
   client6,
   book,
   aboutUsImg,
+  course1,
 };
