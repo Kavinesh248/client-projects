@@ -2,7 +2,10 @@ import styles from "./WhyChooseUs.module.css";
 
 const WhyChooseUs = function () {
   return (
-    <section className={styles.sectionWhyChooseUs} id="#whyChooseUs">
+    <section
+      className={`${styles.sectionWhyChooseUs} container`}
+      id="#whyChooseUs"
+    >
       <h2 className={styles.mainText}>Why Choose Us?</h2>
 
       <div className={styles.whyCardsBox}>

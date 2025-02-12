@@ -1,6 +1,6 @@
 .sectionWhyChooseUs {
   padding-block: 6.8rem;
-  padding-inline: 12.2rem;
+  /* padding-inline: 12.2rem; */
   background-color: var(--bg--secondary);
   text-align: center;
 }
