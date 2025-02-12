@@ -1,4 +1,5 @@
 import About from "../features/AboutUs/About";
+import Courses from "../features/Courses/Courses";
 import Header from "../features/Header/Header";
 import Hero from "../features/Hero/Hero";
 import WhyChooseUs from "../features/WhyChooseUs/WhyChooseUs";
@@ -10,6 +11,7 @@ const Home = function () {
       <Hero />
       <WhyChooseUs />
       <About />
+      <Courses />
     </main>
   );
 };
