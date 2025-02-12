@@ -1,34 +1,62 @@
 .sectionAbout {
-  padding: 7.8rem;
-
+  padding-block: 7.8rem;
   display: grid;
   grid-template-columns: 40% 1fr;
 }
 
-/* .aboutUsContent {
-} */
+.aboutUs,
+.aboutUsHeading span,
+.aboutList li svg {
+  color: var(--clr--orange-primary);
+}
 
-.aboutUs {
+.aboutUs,
+.aboutList li {
   font-size: 1.7rem;
   font-weight: 600;
-  color: var(--clr--orange-primary);
+}
+
+.aboutUs {
   text-transform: capitalize;
   margin-bottom: 2.6rem;
+}
+
+.aboutMainContentBox {
+  width: 90%;
+  margin-bottom: 3.6rem;
 }
 
 .aboutUsHeading {
   font-size: 3.6rem;
   color: #1b1818;
   line-height: 1.2;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
   margin-bottom: 1.8rem;
-}
-
-.aboutUsHeading span {
-  color: var(--clr--orange-primary);
 }
 
 .aboutUsDescription {
   font-size: 1.6rem;
+  line-height: 1.6;
   color: var(--clr--description-grey);
+}
+
+.aboutList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.aboutList li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.aboutList li svg {
+  width: 2.4rem;
+  margin-right: 1.2rem;
+}
+
+.aboutImageBox img {
+  width: 100%;
 }
