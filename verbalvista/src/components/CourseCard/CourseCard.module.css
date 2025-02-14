@@ -1,0 +1,138 @@
+.cardContainer {
+  width: 100%;
+  max-width: 35rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  background-color: var(--clr--white-primary);
+}
+
+.imgContainer {
+  height: 20rem;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.courseContentWrapper,
+.courseRatingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courseContentWrapper {
+  margin-bottom: 2.4rem;
+}
+
+.mainContent {
+  padding: 1.2rem;
+}
+
+.courseRatingWrapper {
+  font-size: 1.3rem;
+  font-weight: 500;
+  gap: 0.2rem;
+}
+
+.ratingStar svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: 0.1rem;
+  margin-right: 0.4rem;
+  fill: var(--clr--orange-primary);
+}
+
+.courseName {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.6rem;
+  text-transform: uppercase;
+}
+
+.courseTitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.readMore {
+  width: max-content;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 0.4rem;
+  color: var(--clr--orange-primary);
+  border-bottom: 1px solid var(--clr--orange-primary);
+}
+
+.courseDurationBox,
+.courseDurationBox div,
+.coursePriceBox,
+.enroll {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courseDurationBox,
+.courseDurationBox div {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #03071e99;
+}
+
+.courseDurationBox {
+  border-bottom: 2px solid #e6e6e6;
+  padding-block: 1.2rem;
+  margin-bottom: 2.4rem;
+  margin-inline: 1.1rem;
+}
+
+.courseDurationBox div {
+  gap: 0.4rem;
+}
+
+.icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.coursePriceBox {
+  padding: 0 1.2rem 1.2rem 1.2rem;
+}
+
+.priceBox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.priceBox span:first-child {
+  color: var(--clr--description-grey);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+.priceBox span:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.enroll {
+  gap: 0.6rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: var(--clr--orange-primary);
+  color: var(--clr--white-primary);
+}
