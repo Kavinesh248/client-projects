@@ -15,6 +15,8 @@ import client6 from "./customer-6.jpg";
 import course1 from "./course-01.png";
 import spokenEnglish from "./english.webp";
 import spokenFrench from "./french.webp";
+import ielts from "./ielts.webp";
+import phonetics from "./phonetics.webp";
 
 export const assets = {
   hamburger,
@@ -34,4 +36,6 @@ export const assets = {
   course1,
   spokenEnglish,
   spokenFrench,
+  ielts,
+  phonetics,
 };
