@@ -127,6 +127,10 @@
   font-weight: 600;
 }
 
+.blured {
+  filter: blur(4px);
+}
+
 .enroll {
   gap: 0.6rem;
   cursor: pointer;

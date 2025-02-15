@@ -6,7 +6,11 @@ const CourseCard = function ({
   nameColor,
   courseName,
   courseTitle,
+  courseOffPrice,
   coursePrice,
+  isBlur,
+  rating,
+  duration,
 }) {
   console.log(heroImage);
   return (
@@ -35,14 +39,15 @@ const CourseCard = function ({
                 />
               </svg>
             </div>
-            <span>4.6</span>
-            <span>(12)</span>
+
+            <span>{rating?.ratingAverage ?? "N/0"}</span>
+            <span>({rating?.noOfPeopleRated ?? 0})</span>
           </div>
           <p
             className={styles.courseName}
             style={{ backgroundColor: nameBg, color: nameColor }}
           >
-            spoken {courseName}
+            {courseName}
           </p>
         </div>
         <p className={styles.courseTitle}>{courseTitle}</p>
@@ -64,7 +69,7 @@ const CourseCard = function ({
               d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
             />
           </svg>
-          <span>3 mnths</span>
+          <span>{duration} mnths</span>
         </div>
         <div className={styles.courseMode}>
           <svg
@@ -78,10 +83,11 @@ const CourseCard = function ({
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
+              d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"
             />
           </svg>
-          <span>Offline/Online</span>
+
+          <span>Online</span>
         </div>
         <div className={styles.courseLevel}>
           <svg
@@ -103,8 +109,8 @@ const CourseCard = function ({
       </div>
       <div className={styles.coursePriceBox}>
         <div className={styles.priceBox}>
-          <span>₹4,000</span>
-          <span>₹{coursePrice}/m</span>
+          <span>₹{courseOffPrice}</span>
+          <span className={isBlur ? styles.blured : ""}>₹{coursePrice}/m</span>
         </div>
         <div className={styles.enroll}>
           <span>Enroll</span>
