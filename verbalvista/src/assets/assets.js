@@ -17,6 +17,7 @@ import spokenEnglish from "./english.webp";
 import spokenFrench from "./french.webp";
 import ielts from "./ielts.webp";
 import phonetics from "./phonetics.webp";
+import study from "./study.png";
 
 export const assets = {
   hamburger,
@@ -38,4 +39,5 @@ export const assets = {
   spokenFrench,
   ielts,
   phonetics,
+  study,
 };
