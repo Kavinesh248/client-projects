@@ -43,7 +43,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className={`${styles.sectionContainer} container`}>
-      {/* <h2>Testimonials</h2> */}
+      <h2>Testimonials</h2>
       <h1>What&apos;s our students say?</h1>
       <div className={styles.sectionGrid}>
         {testimonials.map((testimonial) => (
