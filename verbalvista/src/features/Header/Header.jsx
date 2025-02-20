@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 import { assets } from "../../assets/assets";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Header = function () {
@@ -21,8 +21,7 @@ const Header = function () {
       <nav className={`${styles.mainNav} flex`}>
         <ul className={styles.navHeader}>
           <li>
-            <NavLink
-              to="/about "
+            <Link
               onClick={() => setIsActiveLink(true)}
               className={
                 isActiveLink
@@ -31,17 +30,17 @@ const Header = function () {
               }
             >
               home
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink className={styles.mainNavLink}>about</NavLink>
+            <Link className={styles.mainNavLink}>about</Link>
           </li>
 
           <li>
-            <NavLink className={styles.mainNavLink}>course</NavLink>
+            <Link className={styles.mainNavLink}>course</Link>
           </li>
           <li>
-            <NavLink className={styles.mainNavLink}>pricing</NavLink>
+            <Link className={styles.mainNavLink}>pricing</Link>
           </li>
         </ul>
 
