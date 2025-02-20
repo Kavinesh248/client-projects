@@ -13,10 +13,10 @@ import client4 from "./customer-4.jpg";
 import client5 from "./customer-5.jpg";
 import client6 from "./customer-6.jpg";
 import course1 from "./course-01.png";
-import spokenEnglish from "./english.webp";
-import spokenFrench from "./french.webp";
-import ielts from "./ielts.webp";
-import phonetics from "./phonetics.webp";
+import spokenEnglish from "./spokenEnglish.png";
+import spokenFrench from "./spokenFrench.png";
+import ielts from "./ielts.png";
+import phonetics from "./phonetics.png";
 import study from "./study.png";
 
 export const assets = {
