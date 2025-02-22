@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 
 const About = function () {
   return (
-    <section className={`${styles.sectionAbout} container`}>
+    <section className={`${styles.sectionAbout} container`} id="about">
       <div className={styles.aboutContent}>
         <h3 className={styles.aboutUs}>About Us</h3>
         <div className={styles.aboutMainContentBox}>
