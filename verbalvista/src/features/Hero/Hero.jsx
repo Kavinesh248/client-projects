@@ -4,7 +4,7 @@ import "../../index.css";
 
 const Hero = function () {
   return (
-    <section className={styles.sectionHero}>
+    <section className={styles.sectionHero} id="hero">
       <div className={styles.hero}>
         <div className={styles.heroTextBox}>
           <h1 className={styles.headingPrimary}>
