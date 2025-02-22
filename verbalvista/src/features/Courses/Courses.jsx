@@ -6,7 +6,7 @@ import styles from "./Courses.module.css";
 const Courses = function () {
   console.log(assets.spokenEnglish);
   return (
-    <section className={`${styles.sectionCourses} container`}>
+    <section className={`${styles.sectionCourses} container`} id="course">
       <article className={styles.courseHeader}>
         <h1>Popular Courses</h1>
         <p>
