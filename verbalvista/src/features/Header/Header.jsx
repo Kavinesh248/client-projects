@@ -1,10 +1,12 @@
 import styles from "./Header.module.css";
 import { assets } from "../../assets/assets";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link } from "react-scroll";
+// import { useState } from "react";
 
 const Header = function () {
-  const [isActiveLink, setIsActiveLink] = useState(false);
+  // const [isActive, setIsActive] = useState(true);
+
+  // function handleClick() {}
 
   return (
     <div className={styles.header}>
@@ -22,25 +24,52 @@ const Header = function () {
         <ul className={styles.navHeader}>
           <li>
             <Link
-              onClick={() => setIsActiveLink(true)}
-              className={
-                isActiveLink
-                  ? `${styles.mainNavLink} ${styles.mainNavLinkActive}`
-                  : styles.mainNavLink
-              }
+              to="hero"
+              smooth={true}
+              duration={600}
+              spy={true}
+              activeClass={styles.mainNavLinkActive}
+              className={styles.mainNavLink}
             >
               home
             </Link>
           </li>
           <li>
-            <Link className={styles.mainNavLink}>about</Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={600}
+              spy={true}
+              activeClass={styles.mainNavLinkActive}
+              className={styles.mainNavLink}
+            >
+              about
+            </Link>
           </li>
 
           <li>
-            <Link className={styles.mainNavLink}>course</Link>
+            <Link
+              to="course"
+              smooth={true}
+              duration={600}
+              spy={true}
+              activeClass={styles.mainNavLinkActive}
+              className={styles.mainNavLink}
+            >
+              course
+            </Link>
           </li>
           <li>
-            <Link className={styles.mainNavLink}>pricing</Link>
+            <Link
+              to="pricing"
+              smooth={true}
+              duration={600}
+              spy={true}
+              activeClass={styles.mainNavLinkActive}
+              className={styles.mainNavLink}
+            >
+              pricing
+            </Link>
           </li>
         </ul>
 
